@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Sweet T Photography | Mountain City, TN Photographer</title>
+    <link rel="stylesheet" href="dist/styles/bundle.css" />
+</style>
+</head>
+<body>
+    <nav>
+        <a href="/">Sweet T Photography</a>
+        <a class="menu-item" href="/about">About</a>
+        <a class="menu-item" href="https://www.etsy.com/shop/SimplySweetT">Etsy</a>
+        <a class="menu-item" href="/contact">Contact</a>
+        <a class="menu" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </nav>
+    <article>
+        <section title="Family"></section>
+        <section title="Weddings"></section>
+        <section title="Fine Art"></section>
+        <section title="Engagements"></section>
+        <section title="Senior Portraits"></section>
+        <section title="Children"></section>
+        <section title="Maternity"></section>
+        <section title="Special Events"></section>
+    </article>
+    <script type="text/javascript">
+    function toggleMenu(event) {
+        event.preventDefault();
+
+        var $el = document.querySelectorAll("nav")[0],
+            className = "active";
+
+        if ($el.classList) {
+          $el.classList.toggle(className);
+        } else {
+          var classes = $el.className.split(' ');
+          var existingIndex = classes.indexOf(className);
+
+          if (existingIndex >= 0)
+            classes.splice(existingIndex, 1);
+          else
+            classes.push(className);
+
+          $el.className = classes.join(' ');
+        }
+    }
+
+    document.querySelectorAll(".menu")[0].addEventListener("click", toggleMenu, false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "SweetTPhotographySite",
+  "version": "1.0.0",
+  "description": "Site for Sweet T Photography",
+  "repository": "https://github.com/arosenb2/sweettphoto.git",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass build/style.scss --output-style compressed | postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" > assets/bundle.css"
+  },
+  "author": "Aaron Rosenbaum <aaron.rosenbaum@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1",
+    "autoprefixer": "^6.1.0",
+    "postcss-cli": "^2.3.2"
+  }
+}
