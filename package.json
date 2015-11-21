@@ -5,7 +5,7 @@
   "repository": "https://github.com/arosenb2/sweettphoto.git",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass build/style.scss --output-style compressed | postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" > dist/styles/bundle.css"
+    "build-css": "node-sass source/style.scss --output-style compressed | postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" > dist/styles/bundle.css"
   },
   "author": "Aaron Rosenbaum <aaron.rosenbaum@gmail.com>",
   "license": "MIT",
