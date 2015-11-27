@@ -11,8 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^3.4.2",
-    "nodemon": "^1.8.1",
-    "autoprefixer": "^6.1.0",
-    "postcss-cli": "^2.3.2"
+    "postcss-cli": "^2.3.2",
+    "autoprefixer": "^6.1.0"
   }
 }
